@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace UCRM\Twig\Extensions;
+namespace MVQN\Twig\Extensions;
 
 use MVQN\Twig\TokenParsers\SwitchTokenParser;
 
 /**
- * Class Extension
+ * Class SwitchExtension
  *
- * @package MVQN\Twig
+ * @package MVQN\Twig\Extensions
  * @author Ryan Spaeth <rspaeth@mvqn.net>
  * @final
  */
