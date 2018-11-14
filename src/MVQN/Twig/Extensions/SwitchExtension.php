@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace UCRM\Twig;
+namespace UCRM\Twig\Extensions;
 
 use MVQN\Twig\TokenParsers\SwitchTokenParser;
 
