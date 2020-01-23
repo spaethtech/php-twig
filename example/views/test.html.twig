@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>{% include "css/main.css" %}</style>
+</head>
+<body style="margin:0; padding:30px; font:12px/1.5 Helvetica,Arial,Verdana,sans-serif;">
+    <h1 style="margin:0; font-size:48px; font-weight:normal; line-height:48px;">Test</h1>
+    <p style="text-align:justify;">
+        This is a test page!
+    </p>
+
+    {{ home }}
+
+
+    {% switch type %}
+        {% case "integer" %}
+            <p>{{ value }}</p>
+
+        {% default %}
+            <p>Default</p>
+    {% endswitch %}
+
+
+
+</body>
+</html>
