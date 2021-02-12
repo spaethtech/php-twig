@@ -1,7 +1,6 @@
 {
-    "name": "mvqn/twig",
+    "name": "rspaeth/twig",
     "description": "A library for additional Twig functionality!",
-    "minimum-stability": "stable",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -18,11 +17,16 @@
     },
     "autoload": {
         "psr-4": {
-            "MVQN\\Twig\\": "src/"
+            "rspaeth\\Twig\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        { "type": "path", "url": "../*"}
+    ]
 }

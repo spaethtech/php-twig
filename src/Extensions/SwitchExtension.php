@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
-namespace MVQN\Twig\Extensions;
+namespace rspaeth\Twig\Extensions;
 
-use MVQN\Twig\TokenParsers\SwitchTokenParser;
+use rspaeth\Twig\TokenParsers\SwitchTokenParser;
 use Twig\Extension\AbstractExtension;
 
 /**
  * Class SwitchExtension
  *
- * @package MVQN\Twig
+ * @package rspaeth\Twig
  * @author Ryan Spaeth <rspaeth@mvqn.net>
  * @final
  */
