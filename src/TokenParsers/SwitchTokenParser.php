@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace rspaeth\Twig\TokenParsers;
+namespace MVQN\Twig\TokenParsers;
 
-use rspaeth\Twig\Nodes\SwitchNode;
+use MVQN\Twig\Nodes\SwitchNode;
 use Twig\Error\SyntaxError;
 use Twig\Node\Node;
 use Twig\Token;
@@ -13,7 +13,7 @@ use Twig\TokenParser\AbstractTokenParser;
  * Class SwitchTokenParser that parses {% switch %}{% case %}{% default %}{% endswitch %} tags.
  * Based on the rejected Twig pull request: https://github.com/fabpot/Twig/pull/185
  *
- * @package rspaeth\Twig
+ * @package MVQN\Twig
  * @author Ryan Spaeth <rspaeth@mvqn.net>
  * @final
  */

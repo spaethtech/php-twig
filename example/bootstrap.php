@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use rspaeth\Twig\Extensions\SwitchExtension;
+use MVQN\Twig\Extensions\SwitchExtension;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
