@@ -9,7 +9,7 @@ use Twig\Extension\AbstractExtension;
  * Class SwitchExtension
  *
  * @package MVQN\Twig
- * @author Ryan Spaeth <rspaeth@mvqn.net>
+ * @author Ryan Spaeth
  * @final
  */
 final class SwitchExtension extends AbstractExtension

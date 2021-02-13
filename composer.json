@@ -9,6 +9,8 @@
             "email": "rspaeth@mvqn.net"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "~7.3",
         "twig/twig": "~3"
@@ -17,13 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MVQN\\Twig\\": "src/"
+            "MVQN\\Twig\\": "./src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
