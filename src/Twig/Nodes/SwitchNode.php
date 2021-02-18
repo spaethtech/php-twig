@@ -11,14 +11,13 @@ use Twig\Node\Node;
  * Based on the rejected Twig pull request: https://github.com/fabpot/Twig/pull/185
  *
  * @package MVQN\Twig
- * @author Ryan Spaeth
  * @final
+ *
+ * @author Ryan Spaeth
+ * @copyright 2020 Spaeth Technologies, Inc.
  */
 final class SwitchNode extends Node
 {
-    // Public Methods
-    // =========================================================================
-
     /**
      * @inheritdoc
      */
@@ -68,5 +67,7 @@ final class SwitchNode extends Node
         $compiler
             ->outdent()
             ->write("}\n");
+
     }
+
 }

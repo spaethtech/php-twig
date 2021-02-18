@@ -14,8 +14,10 @@ use Twig\TokenParser\AbstractTokenParser;
  * Based on the rejected Twig pull request: https://github.com/fabpot/Twig/pull/185
  *
  * @package MVQN\Twig
- * @author Ryan Spaeth
  * @final
+ *
+ * @author Ryan Spaeth
+ * @copyright 2020 Spaeth Technologies, Inc.
  */
 final class SwitchTokenParser extends AbstractTokenParser
 {
@@ -25,10 +27,12 @@ final class SwitchTokenParser extends AbstractTokenParser
     public function getTag(): string
     {
         return "switch";
+
     }
 
     /**
      * @inheritdoc
+     *
      * @noinspection PhpUnused
      */
     public function parse(Token $token)
@@ -100,25 +104,33 @@ final class SwitchTokenParser extends AbstractTokenParser
         $stream->expect(Token::BLOCK_END_TYPE);
 
         return new SwitchNode($nodes, [], $line, $this->getTag());
+
     }
 
     /**
      * @param Token $token
+     *
      * @return bool
+     *
      * @noinspection PhpUnused
      */
     public function decideIfFork(Token $token): bool
     {
         return $token->test(["case", "default", "endswitch"]);
+
     }
 
     /**
      * @param Token $token
+     *
      * @return bool
+     *
      * @noinspection PhpUnused
      */
     public function decideIfEnd(Token $token): bool
     {
         return $token->test(["endswitch"]);
+
     }
+
 }

@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 namespace MVQN\Twig\Extensions;
 
 use MVQN\Twig\TokenParsers\SwitchTokenParser;
@@ -9,8 +10,10 @@ use Twig\Extension\AbstractExtension;
  * Class SwitchExtension
  *
  * @package MVQN\Twig
- * @author Ryan Spaeth
  * @final
+ *
+ * @author Ryan Spaeth
+ * @copyright 2020 Spaeth Technologies, Inc.
  */
 final class SwitchExtension extends AbstractExtension
 {
@@ -20,6 +23,7 @@ final class SwitchExtension extends AbstractExtension
     public function getName(): string
     {
         return "switch";
+
     }
 
     /**
@@ -28,6 +32,7 @@ final class SwitchExtension extends AbstractExtension
     public function getTokenParsers(): array
     {
         return [ new SwitchTokenParser() ];
+
     }
 
 }
