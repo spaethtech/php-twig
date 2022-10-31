@@ -1,10 +1,10 @@
-# mvqn/twig
+# spaethtech/twig
 A library of common classes and functions, specifically designed for use in rspaeth projects, but generic enough for anything!
 
 ## Installation
 Install the latest version with
 ```bash
-composer require mvqn/twig
+composer require spaethtech/twig
 ```
 
 ## Basic Usage
@@ -27,14 +27,14 @@ COMING SOON
 COMING SOON!
 
 ### Related Packages
-[mvqn/annotations](https://github.com/mvqn/twig)\
+[spaethtech/annotations](https://github.com/spaethtech/twig)\
 
 
 ### Submitting bugs and feature requests
-Bugs and feature request are tracked on [Github](https://github.com/mvqn/twig/issues)
+Bugs and feature request are tracked on [Github](https://github.com/spaethtech/twig/issues)
 
 ### Author
-Ryan Spaeth <[rspaeth@mvqn.net](mailto:rspaeth@mvqn.net)>
+Ryan Spaeth <[rspaeth@spaethtech.com](mailto:rspaeth@spaethtech.com)>
 
 ### License
 This module is licensed under the MIT License - see the `LICENSE` file for details.

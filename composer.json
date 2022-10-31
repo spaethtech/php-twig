@@ -1,12 +1,12 @@
 {
-    "name": "mvqn/twig",
+    "name": "spaethtech/twig",
     "description": "A library for additional Twig functionality.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Ryan Spaeth",
-            "email": "rspaeth@mvqn.net"
+            "email": "rspaeth@spaethtech.com"
         }
     ],
     "minimum-stability": "stable",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MVQN\\": "./src/"
+            "SpaethTech\\": "./src/"
         }
     }
 }

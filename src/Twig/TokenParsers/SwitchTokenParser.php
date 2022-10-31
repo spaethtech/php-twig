@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace MVQN\Twig\TokenParsers;
+namespace SpaethTech\Twig\TokenParsers;
 
-use MVQN\Twig\Nodes\SwitchNode;
+use SpaethTech\Twig\Nodes\SwitchNode;
 use Twig\Error\SyntaxError;
 use Twig\Node\Node;
 use Twig\Token;
@@ -13,7 +13,7 @@ use Twig\TokenParser\AbstractTokenParser;
  * Class SwitchTokenParser that parses {% switch %}{% case %}{% default %}{% endswitch %} tags.
  * Based on the rejected Twig pull request: https://github.com/fabpot/Twig/pull/185
  *
- * @package MVQN\Twig
+ * @package SpaethTech\Twig
  * @final
  *
  * @author Ryan Spaeth
@@ -47,8 +47,7 @@ final class SwitchTokenParser extends AbstractTokenParser
         $stream->expect(Token::BLOCK_END_TYPE);
 
         // There can be some whitespace between the {% switch %} and first {% case %} tag.
-        while ($stream->getCurrent()->getType() == Token::TEXT_TYPE && trim($stream->getCurrent()->getValue()) === "")
-        {
+        while ($stream->getCurrent()->getType() == Token::TEXT_TYPE && trim($stream->getCurrent()->getValue()) === "") {
             $stream->next();
         }
 
@@ -58,16 +57,13 @@ final class SwitchTokenParser extends AbstractTokenParser
         $cases = [];
         $end = false;
 
-        while (!$end)
-        {
+        while (!$end) {
             $next = $stream->next();
 
-            switch ($next->getValue())
-            {
+            switch ($next->getValue()) {
                 case "case":
                     $values = [];
-                    while (true)
-                    {
+                    while (true) {
                         $values[] = $expressionParser->parsePrimaryExpression();
 
                         // Multiple allowed values?
@@ -78,10 +74,12 @@ final class SwitchTokenParser extends AbstractTokenParser
                     }
                     $stream->expect(Token::BLOCK_END_TYPE);
                     $body = $this->parser->subparse([$this, "decideIfFork"]);
-                    $cases[] = new Node([
-                        "values" => new Node($values),
-                        "body" => $body
-                    ]);
+                    $cases[] = new Node(
+                        [
+                            "values" => new Node($values),
+                            "body" => $body
+                        ]
+                    );
                     break;
                 case "default":
                     $stream->expect(Token::BLOCK_END_TYPE);

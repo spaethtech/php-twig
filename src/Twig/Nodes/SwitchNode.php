@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MVQN\Twig\Nodes;
+namespace SpaethTech\Twig\Nodes;
 
 use Twig\Compiler;
 use Twig\Node\Node;
@@ -10,7 +10,7 @@ use Twig\Node\Node;
  * Class SwitchNode
  * Based on the rejected Twig pull request: https://github.com/fabpot/Twig/pull/185
  *
- * @package MVQN\Twig
+ * @package SpaethTech\Twig
  * @final
  *
  * @author Ryan Spaeth
