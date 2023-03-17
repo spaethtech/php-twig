@@ -1,4 +1,4 @@
-vendor/
 .idea/
-.env
+vendor/
+**/.env
 composer.lock
