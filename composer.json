@@ -1,5 +1,5 @@
 {
-    "name": "spaethtech/twig",
+    "name": "spaethtech/php-twig",
     "description": "A library for additional Twig functionality.",
     "type": "library",
     "license": "MIT",
